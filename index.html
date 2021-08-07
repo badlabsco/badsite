@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>bad labs</title>
+    <meta
+      name="description"
+      content="Get a random fact about a planet in our solar system."
+    />
+    <meta name="author" content="The IPFS Docs team." />
+    <style>
+      body {
+        margin: 15px auto;
+        max-width: 650px;
+        line-height: 1.2;
+        font-family: sans-serif;
+        font-size: 2em;
+        color: #fff;
+        background: #444;
+      }
+    </style>
+  </head>
+  <body onload="main()">
+    <h1>bad labs</h1>
+    <p id="output_p"></p>
+    <script>
+      function main() {
+        const facts = [
+          'bad labs is bad'
+        ]
+        document.querySelector('#output_p').innerHTML =
+          facts[Math.floor(Math.random() * facts.length)]
+      }
+    </script>
+  </body>
+</html>
